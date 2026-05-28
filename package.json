@@ -1,25 +1,25 @@
 {
-  "name": "trpc-monorepo",
-  "private": true,
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "type": "module",
   "scripts": {
-    "build": "dotenv -- turbo build",
-    "dev": "dotenv -- turbo dev",
-    "db:generate": "dotenv -- turbo db:generate",
-    "db:migrate": "dotenv -- turbo db:migrate",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/server.js\""
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "prettier": "^3.7.4",
-    "turbo": "^2.7.2",
-    "typescript": "5.9.2"
-  },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": ">=18"
+    "@types/node": "^25.9.1",
+    "tsc-watch": "^7.2.0",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
-    "dotenv-cli": "^11.0.0"
+    "@types/express": "^5.0.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
   }
 }
