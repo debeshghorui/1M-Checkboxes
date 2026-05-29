@@ -7,7 +7,9 @@
   "scripts": {
     "build": "tsc -p .",
     "start": "node dist/index.js",
-    "dev": "tsc-watch --onSuccess \"node dist/server.js\""
+    "dev": "tsc-watch --onSuccess \"node dist/server.js\"",
+    "valkey:up": "docker-compose up -d",
+    "valkey:down": "docker-compose down"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,8 @@
   "dependencies": {
     "@types/express": "^5.0.6",
     "dotenv": "^17.2.3",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "ioredis": "^5.11.0",
+    "socket.io": "^4.8.3"
   }
 }
