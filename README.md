@@ -6,14 +6,6 @@ This project demonstrates large-scale state management, real-time communication,
 
 ---
 
-## Demo
-
-### Live Application
-https://your-app-url.com
-
-### Demo Video
-https://youtube.com/your-demo-video
-
 # Features
 
 - Real-time checkbox synchronization
