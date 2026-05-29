@@ -10,16 +10,10 @@ This project demonstrates large-scale state management, real-time communication,
 
 - Real-time checkbox synchronization
 - WebSocket-based communication
-- OAuth 2.0 / OIDC authentication
 - Redis-backed state management
 - Redis Pub/Sub for multi-instance communication
 - Custom rate limiting
 - Horizontal scaling support
-- Virtualized rendering for large grids
-- Connection management
-- Online user tracking
-- Efficient checkbox updates
-- Abuse protection
 
 ---
 
